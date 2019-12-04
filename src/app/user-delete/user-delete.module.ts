@@ -1,23 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
 
-import { HomePage } from './home.page';
+import { IonicModule } from '@ionic/angular';
+
+import { UserDeletePageRoutingModule } from './user-delete-routing.module';
+
+import { UserDeletePage } from './user-delete.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
+    UserDeletePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [UserDeletePage]
 })
-export class HomePageModule {}
+export class UserDeletePageModule {}
